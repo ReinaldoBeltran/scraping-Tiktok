@@ -1,0 +1,5 @@
+
+Manipular VSL en funnel de ventas
+
+var video = document.querySelector('video')
+video.setAttribute('controls','true');
