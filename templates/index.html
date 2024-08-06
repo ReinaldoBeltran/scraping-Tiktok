@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 5rem;
+            background-image: url('https://www.xtrafondos.com/wallpapers/ubuntu-linux-minimalism-3445.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 5rem;
+        }
+
+        .container {
+            border-radius: 10px; /* Estilos redondeados */
+        }
+
+        .card {
+            margin: 0 auto;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            background-color: #fff;
+            border-radius: 10px; /* Estilos redondeados */
+            transition: transform 0.3s; /* Transición de movimiento */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Movimiento hacia arriba al pasar el mouse */
+        }
+
+        .card-header {
+            background-color: #000;
+            border-bottom: none;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card-body {
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 10px; /* Estilos redondeados */
+            border: 1px solid #ced4da; /* Borde del formulario */
+        }
+
+        .btn-primary {
+            border-radius: 0;
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .btn-primary:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+    </style>
+    <title>Descargar Videos de TikTok</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 style="font-size: 24px;">Descargar Videos de TikTok</h1>
+            </div>
+            <div class="card-body">
+                <form action="/download" method="post">
+                    <div class="form-group">
+                        <label for="cuenta">Cuenta de TikTok:</label>
+                        <input type="text" class="form-control" id="cuenta" name="cuenta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ruta_destino">Ruta de Destino:</label>
+                        <input type="text" class="form-control" id="ruta_destino" name="ruta_destino" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre_carpeta">Nombre de la Carpeta:</label>
+                        <input type="text" class="form-control" id="nombre_carpeta" name="nombre_carpeta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tiempo_espera">Tiempo de espera (segundos):</label>
+                        <input type="number" class="form-control" id="tiempo_espera" name="tiempo_espera" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Descargar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
